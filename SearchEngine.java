@@ -1,6 +1,17 @@
 // import java.io.IOException;
 // import java.net.URI;
 
+//// pseudocode: {
+    ////follow same steps as NumberServer in order to get the right input
+    ////store user input in separate array, interate through using loop when called w/ search
+    ////use TBD java function in order to compare strings to substrings
+
+////}
+
+
+
+
+
 
 // class Handler implements URLHandler {
 //     // The one bit of state on the server: a number that will be manipulated by
