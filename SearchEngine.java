@@ -3,8 +3,6 @@ import java.net.URI;
 import java.util.ArrayList;
 
 class SearchHandler implements URLHandler {
-    // The one bit of state on the server: a number that will be manipulated by
-    // various requests.
     ArrayList<String> words = new ArrayList<String>();
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
@@ -15,7 +13,7 @@ class SearchHandler implements URLHandler {
                 String[] parameters = url.getQuery().split("=");
                 if (parameters[0].equals("s")) {
                     words.add(parameters[1]);
-                    return parameters[1].concat(" added. Elements in server: " + words.size());
+                    return parameters[1] + " added. Elements in server: " + words.size();
                 }
             }
              if (url.getPath().contains("/search")) {
